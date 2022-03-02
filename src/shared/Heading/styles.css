@@ -1,0 +1,16 @@
+.heading {
+  color: var(--color-text-black);
+}
+.heading__underline {
+  text-decoration: underline;
+}
+
+.heading__italic {
+  font-style: italic;
+}
+
+.heading__truncated {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

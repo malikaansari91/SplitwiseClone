@@ -1,0 +1,38 @@
+.input-field-container {
+  margin-bottom: 20px;
+}
+
+.input-field {
+  display: flex;
+}
+
+.input-field .left-component-wrapper,
+.input-field-container input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--color-light-gray);
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.input-field .left-component-wrapper {
+  width: 50%;
+  background-color: var(--color-light-gray);
+}
+
+.input-field-container .form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--color-text-black);
+}
+
+.error input {
+  border-color: red;
+}
+.error input:focus-visible {
+  outline-color: red;
+}

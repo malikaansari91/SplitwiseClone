@@ -1,0 +1,34 @@
+@import url(./global.css);
+@import url(./form.css);
+@import url(./flex.css);
+
+/**
+modules
+*/
+@import url(./modules/onboarding.css);
+
+html {
+  --color-text-black: #151b28;
+  --color-text-white: #ffffff;
+  --color-text-secondary: #788399;
+  --color-text-danger: red;
+  --color-background: #ffffff;
+  --color-primary: #664de5;
+  --color-light-gray: #f2f5f9;
+  --gutter: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+}
+
+.container {
+  max-width: 1080px;
+  margin: auto;
+}

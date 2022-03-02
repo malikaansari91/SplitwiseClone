@@ -1,0 +1,71 @@
+.text-center {
+  text-align: center;
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.d-block {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+a:active {
+  color: transparent;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 8pt;
+  }
+
+  .sm-pl-10 {
+    padding-left: 10px;
+  }
+  .sm-pr-10 {
+    padding-right: 10px;
+  }
+}
