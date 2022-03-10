@@ -9,6 +9,7 @@ export const Input = ({
   error,
   inputProps,
   leftComponent,
+  pattern,
 }) => (
   <div className={`input-field-container ${error ? "error" : ""}`}>
     <Text className="form-label">{label}</Text>
@@ -16,7 +17,7 @@ export const Input = ({
       {leftComponent ? (
         <div className="left-component-wrapper">{leftComponent}</div>
       ) : null}
-      <input {...register(label, { required })} {...inputProps} />
+      <input {...register(label, { required, pattern })} {...inputProps} />
     </div>
   </div>
 );

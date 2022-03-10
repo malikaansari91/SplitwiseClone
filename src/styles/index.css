@@ -1,11 +1,10 @@
+@import url(./tailwind.css);
 @import url(./global.css);
 @import url(./form.css);
-@import url(./flex.css);
 
 /**
 modules
 */
-@import url(./modules/onboarding.css);
 
 html {
   --color-text-black: #151b28;

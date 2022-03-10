@@ -6,24 +6,24 @@ import {
   SET_STEPS,
 } from "../store/constants";
 
-export const StepperContext = React.createContext();
+export const SplitwiseContext = React.createContext();
 
-export const StepperProvider = ({ children }) => {
+export const SplitwiseProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, defaultStepperState);
 
   return (
-    <StepperContext.Provider value={[state, dispatch]}>
+    <SplitwiseContext.Provider value={[state, dispatch]}>
       {children}
-    </StepperContext.Provider>
+    </SplitwiseContext.Provider>
   );
 };
 
 export const useStepper = () => {
-  const [state, dispatch] = useContext(StepperContext);
+  const [state, dispatch] = useContext(SplitwiseContext);
 
   const { currentStep, steps } = state;
 
-  if (!StepperContext) {
+  if (!SplitwiseContext) {
     throw new Error("useStepper should be used inside StepperProvider");
   }
 

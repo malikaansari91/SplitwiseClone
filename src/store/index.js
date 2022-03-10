@@ -5,8 +5,17 @@ import {
 } from "./constants";
 
 export const defaultStepperState = {
-  steps: [],
-  currentStep: 0,
+  user: {
+    id: 1,
+    name: "Malika Ansari",
+    friends: [
+      {
+        id: 2,
+        name: "Rehana",
+      },
+    ],
+  },
+  expenses: [],
 };
 
 export const reducer = (state = defaultStepperState, action) => {
